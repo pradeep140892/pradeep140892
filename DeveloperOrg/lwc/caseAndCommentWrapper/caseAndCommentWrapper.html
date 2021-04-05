@@ -1,0 +1,15 @@
+<template>
+    <lightning-card variant="Narrow" title="CaseAndCaseCommentInsert" icon-name="standard:case">
+    <div class="slds-m-around_small">
+        <lightning-datatable
+                key-field="id"
+                data={Cases}
+                show-row-number-column="true"
+                hide-checkbox-column="true"
+                columns={columns}
+                onsave={handleSave}
+                draft-values={draftValues}>
+        </lightning-datatable>
+    </div> 
+</lightning-card>
+</template>
